@@ -62,6 +62,7 @@ class ContentImporter {
       ['commerce_product_attribute_value', 'size'],
       ['commerce_product', 'clothing'],
       ['commerce_product', 'simple'],
+      ['commerce_shipping_method', ''],
     ];
     foreach ($available_content as $keys) {
       $this->importAll($keys[0], $keys[1]);
