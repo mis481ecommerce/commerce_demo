@@ -8,6 +8,19 @@
 use Drupal\Core\Url;
 
 /**
+ * Implements hook_theme().
+ */
+function commerce_demo_theme($existing, $type, $theme, $path) {
+  return [
+    'commerce_demo_frontpage' => [
+      'variables' => [
+        'featured_products' => [],
+      ],
+    ],
+  ];
+}
+
+/**
  * Implements hook_menu_links_discovered_alter().
  *
  * Workaround for taxonomy_menu not supporting custom paths. See #2865894.
