@@ -49,3 +49,15 @@ function commerce_demo_menu_links_discovered_alter(&$links) {
     }
   }
 }
+
+/**
+ * Implements hook_modules_installed().
+ */
+function commerce_demo_modules_installed($modules) {
+  if (in_array('commerce_demo', $modules)) {
+    $index_storage = \Drupal::entityTypeManager()->getStorage('search_api_index');
+    /** @var \Drupal\search_api\IndexInterface $index */
+    $index = $index_storage->load('products');
+    $index->indexItems();
+  }
+}
