@@ -16,3 +16,9 @@ services:
     class: Drupal\commerce_demo\EventSubscriber\OrderEventsSubscriber
     tags:
       - { name: event_subscriber }
+
+  commerce_demo.product_breadcrumb_builder:
+    class: Drupal\commerce_demo\ProductBreadcrumbBuilder
+    arguments: ['@pathauto.alias_cleaner', '@entity_type.manager']
+    tags:
+      - { name: breadcrumb_builder, priority: 1100 }
