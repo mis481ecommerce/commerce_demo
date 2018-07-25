@@ -22,3 +22,10 @@ services:
     arguments: ['@pathauto.alias_cleaner', '@entity_type.manager']
     tags:
       - { name: breadcrumb_builder, priority: 1100 }
+
+  commerce_demo.catalog_breadcrumb_builder:
+    class: Drupal\commerce_demo\CatalogBreadcrumbBuilder
+    arguments: ['@request_stack', '@title_resolver']
+    tags:
+      # facets_pretty_path is set to 1500.
+      - { name: breadcrumb_builder, priority: 1501 }

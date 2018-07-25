@@ -61,3 +61,23 @@ function commerce_demo_modules_installed($modules) {
     $index->indexItems();
   }
 }
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function commerce_demo_preprocess_breadcrumb(&$variables) {
+  // The Bootstrap theme provides a feature that appends the current page title
+  // to the end of the breadcrumbs. On the catalog page this is awkward, as
+  // Facets already appends the facet source page title when a facet filter
+  // is active.
+  //
+  // This temporarily disables that setting, as module preprocess hooks will run
+  // before the theme's, without actually changing the theme setting.
+  if (class_exists('\Drupal\bootstrap\Plugin\Preprocess\Breadcrumb')) {
+    $current_route_match = \Drupal::routeMatch();
+    if ($current_route_match->getRouteName() == 'view.product_catalog.page_1') {
+      $theme = \Drupal\bootstrap\Bootstrap::getTheme();
+      $theme->setSetting('breadcrumb_title', FALSE);
+    }
+  }
+}

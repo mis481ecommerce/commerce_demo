@@ -232,7 +232,7 @@ display:
           expose:
             label: 'Date added'
           plugin_id: search_api
-      title: 'Product catalog'
+      title: 'Products'
       header: {  }
       footer: {  }
       empty: {  }
