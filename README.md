@@ -14,3 +14,8 @@ Dependencies:
 - Color field, Commerce, Commerce Shipping, 
 - Facets, Facets Pretty Paths, Search API
 - Pathauto, Taxonomy menu, Taxonomy term depth
+
+
+### Installation notes
+
+The module imports demo products upon installation and this can take time. It is recommended to expand PHP's minimum execution time to at least 300 seconds.

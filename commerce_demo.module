@@ -59,6 +59,20 @@ function commerce_demo_modules_installed($modules) {
     /** @var \Drupal\search_api\IndexInterface $index */
     $index = $index_storage->load('products');
     $index->indexItems();
+
+    $theme_handler = \Drupal::getContainer()->get('commerce_demo.theme_handler');
+    $default_theme = \Drupal::config('system.theme')->get('default');
+    $theme_handler->placeBlocks($default_theme);
+  }
+}
+
+/**
+ * Implements hook_themes_installed().
+ */
+function commerce_demo_themes_installed($theme_list) {
+  $theme_handler = \Drupal::getContainer()->get('commerce_demo.theme_handler');
+  foreach ($theme_list as $theme) {
+    $theme_handler->placeBlocks($theme);
   }
 }
 
