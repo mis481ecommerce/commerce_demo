@@ -71,8 +71,8 @@ class ThemeHandler {
     $catalog_visibility = [
       'request_path' => [
         'id' => 'request_path',
-        'pages' => '"/products\r\n/products/*"',
-        'negate' => 'false',
+        'pages' => "/products\r\n/products/*",
+        'negate' => FALSE,
         'context_mapping' => [],
       ],
     ];
