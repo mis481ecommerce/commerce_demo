@@ -1,0 +1,343 @@
+fe71d896-d5ff-4dc7-b060-4f8aefb1f4ec:
+  type: complex
+  status: '1'
+  title: 'Game Console'
+  path: /product/game-console
+  field_brand: 26fd2bdd-5e03-4d51-b15a-79de897fe710
+  field_product_categories:
+    - 1cdb9879-80aa-4534-99f3-c3a09b851edd
+  field_special_categories:
+    - 44e2287a-934b-484d-b342-151530af4a0d
+  variations:
+    f75f7ee4-375d-4493-92df-2ba0b9014009:
+      type: complex
+      sku: GB-P-1
+      price:
+        number: '120.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 00004278-8be6-4e89-8cf5-76583f5fc44e
+      field_images:
+        -
+          filename: mike-meyers-737492-unsplash.jpg
+      weight:
+        number: '0.500000'
+        unit: kg
+    d9b42a76-2d76-4154-b52d-653d80217735:
+      type: complex
+      sku: GB-P-2
+      price:
+        number: '120.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 3128b2f4-cdbb-4c23-b006-7b6f7efc5ca4
+      field_images:
+        -
+          filename: mike-meyers-737491-unsplash.jpg
+      weight:
+        number: '0.500000'
+        unit: kg
+    40e8a406-86f9-41a2-88ba-3e08b436cfe1:
+      type: complex
+      sku: GB-P-3
+      price:
+        number: '120.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 0b66adc7-be86-44cb-8221-f2d1f7175d7b
+      field_images:
+        -
+          filename: mike-meyers-737496-unsplash.jpg
+      weight:
+        number: '0.500000'
+        unit: kg
+    fb0bce8c-f2e8-4044-87d6-37430e1999f6:
+      type: complex
+      sku: GB-P-4
+      price:
+        number: '120.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 967105d8-5047-41f3-a065-e59edfcec5bb
+      field_images:
+        -
+          filename: mike-meyers-737494-unsplash.jpg
+      weight:
+        number: '0.500000'
+        unit: kg
+9552834c-4422-4237-8c2c-616cf2b8a229:
+  type: complex
+  status: '1'
+  title: 'Cold Pressed Juice'
+  path: /product/cold-pressed-juice
+  body:
+    value: "<p>Sustainable hot chicken street art stumptown tousled pour-over mixtape. Listicle raclette polaroid hashtag. Marfa prism hot chicken aesthetic banh mi messenger bag. Kitsch put a bird on it 3 wolf moon, flannel air plant palo santo direct trade cred. Jianbing art party flexitarian gastropub ethical gluten-free tumblr master cleanse locavore, helvetica health goth austin fingerstache prism pickled. Franzen sartorial next level, pug heirloom locavore deep v tilde chicharrones. Roof party cloud bread tumeric taiyaki farm-to-table flexitarian, butcher cold-pressed.</p>\r\n\r\n<p>Tofu distillery poke chicharrones, poutine austin shabby chic cronut kogi XOXO. Swag seitan VHS af cray, health goth retro activated charcoal flannel tote bag squid heirloom. Kitsch yuccie la croix microdosing, bespoke retro hexagon small batch distillery photo booth lomo. Fingerstache vice banh mi mumblecore master cleanse cornhole.&nbsp;</p>\r\n"
+    summary: ''
+    format: basic_html
+  field_brand: 1480694a-908d-455f-bc1f-ac106c679685
+  field_product_categories:
+    - 1cdb9879-80aa-4534-99f3-c3a09b851edd
+  field_special_categories:
+    - 1cdb9879-80aa-4534-99f3-c3a09b851edd
+    - 80a5403e-74d8-46fd-a487-9004889ea948
+    - 5ac7df92-6021-4de7-886d-4618bc7513ec
+  variations:
+    26adddfa-8dde-4caa-a236-54fca547f523:
+      type: complex
+      sku: Jrink-Green
+      price:
+        number: '10.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 0b66adc7-be86-44cb-8221-f2d1f7175d7b
+      field_images:
+        -
+          filename: 'Cold Pressed Juice - green1.jpg'
+      weight:
+        number: '1.000000'
+        unit: kg
+    77f9de1a-dbe2-4ef1-8ecf-7574db5b5cbd:
+      type: complex
+      sku: Jrink-organge
+      price:
+        number: '10.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 016a32ef-ae66-455d-b95e-92aabe951e4b
+      field_images:
+        -
+          filename: 'Cold Pressed Juice - organge1.jpg'
+      weight:
+        number: '1.000000'
+        unit: kg
+    406d5edc-a0cb-49e0-b3d6-6bcfd13faeff:
+      type: complex
+      sku: Jrink-red
+      price:
+        number: '10.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 438eec9b-8c87-44f8-b798-698065ad6af4
+      field_images:
+        -
+          filename: 'Cold Pressed Juice - red1.jpg'
+      weight:
+        number: '1.000000'
+        unit: kg
+4a10f5e6-7bbd-49cb-8aa4-995461422159:
+  type: complex
+  status: '1'
+  title: 'Dillon Mangum Premium Chair'
+  path: /product/dillon-mangum-premium-chair
+  field_brand: 9c3e818e-7636-4afc-9b07-df56a673984d
+  field_product_categories:
+    - 1cdb9879-80aa-4534-99f3-c3a09b851edd
+  field_special_categories:
+    - 3fada410-028e-40a4-bec5-b175fc5372ac
+  variations:
+    41aaea2d-4c1c-4d36-a6ab-f183be5dbfd3:
+      type: complex
+      sku: dillon-mangum-white
+      price:
+        number: '439.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: f52a67a4-31c1-493b-9006-62b11983f7e4
+      field_images:
+        -
+          filename: dillon-mangum-white.jpg
+      weight:
+        number: '5.000000'
+        unit: kg
+    bc89ffa5-a954-4b83-a3bb-cc3fbc081667:
+      type: complex
+      sku: dillon-mangum-black
+      price:
+        number: '439.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 73a5ae2f-5c7f-4d50-9eb6-6bb66002529e
+      field_images:
+        -
+          filename: dillon-mangum-black.jpg
+      weight:
+        number: '5.000000'
+        unit: kg
+    3f41c267-f6c2-4192-a162-cc71b50cec70:
+      type: complex
+      sku: dillon-mangum-pink
+      price:
+        number: '439.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 2543b9a5-0aec-460c-a613-f3fbf260ee38
+      field_images:
+        -
+          filename: dillon-mangum-pink.jpg
+      weight:
+        number: '5.000000'
+        unit: kg
+47e48d90-8aee-495a-a6b3-98cdc40cfe33:
+  type: complex
+  status: '1'
+  title: 'Artsy lightbulb'
+  path: /product/artsy-lightbulb
+  field_brand: 316b2893-6876-49e0-9ce6-68d8751bc8b9
+  field_product_categories:
+    - 1cdb9879-80aa-4534-99f3-c3a09b851edd
+  field_special_categories:
+    - 44e2287a-934b-484d-b342-151530af4a0d
+  variations:
+    e70c48ba-2ca7-47ae-8c3e-8eba6e04d13d:
+      type: complex
+      sku: artsy-lightbulb-blue
+      price:
+        number: '16.990000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 967105d8-5047-41f3-a065-e59edfcec5bb
+      field_images:
+        -
+          filename: lightbulb-blue.jpg
+      weight:
+        number: '125.000000'
+        unit: g
+    c9f1d349-f27a-40de-a25f-0cfb6ca825c4:
+      type: complex
+      sku: artsy-lightbulb-orange
+      price:
+        number: '16.990000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 016a32ef-ae66-455d-b95e-92aabe951e4b
+      field_images:
+        -
+          filename: lightbulb-organge.jpg
+      weight:
+        number: '125.000000'
+        unit: g
+    f46c6626-aced-4b26-b0ff-4279bb028235:
+      type: complex
+      sku: artsy-lightbulb-yellow
+      price:
+        number: '16.990000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 3128b2f4-cdbb-4c23-b006-7b6f7efc5ca4
+      field_images:
+        -
+          filename: lightbulb-yellow.jpg
+      weight:
+        number: '125.000000'
+        unit: g
+74d2763e-2fbf-4d18-add0-e77a632c1147:
+  type: complex
+  status: '1'
+  title: 'Vintage Typewriter'
+  path: /product/vintage-typewriter
+  body:
+    value: "<p>Draft your next screenplay on this vintage beauty! Sustainable hot chicken street art stumptown tousled pour-over mixtape. Listicle raclette polaroid hashtag. Marfa prism hot chicken aesthetic banh mi messenger bag. Kitsch put a bird on it 3 wolf moon, flannel air plant palo santo direct trade cred. Jianbing art party flexitarian gastropub ethical gluten-free tumblr master cleanse locavore, helvetica health goth austin fingerstache prism pickled. Franzen sartorial next level, pug heirloom locavore deep v tilde chicharrones. Roof party cloud bread tumeric taiyaki farm-to-table flexitarian, butcher cold-pressed.</p>\r\n\r\n<p>Tofu distillery poke chicharrones, poutine austin shabby chic cronut kogi XOXO. Swag seitan VHS af cray, health goth retro activated charcoal flannel tote bag squid heirloom. Kitsch yuccie la croix microdosing, bespoke retro hexagon small batch distillery photo booth lomo. Fingerstache vice banh mi mumblecore master cleanse cornhole.&nbsp;</p>\r\n"
+    summary: ''
+    format: basic_html
+  field_brand: 76685424-351a-4668-882a-9169ac560536
+  field_product_categories:
+    - 1cdb9879-80aa-4534-99f3-c3a09b851edd
+  variations:
+    a28c1ead-fd18-449e-bf47-31ea5ae697c5:
+      type: complex
+      sku: Favorit-VintageTypewriter-black
+      price:
+        number: '149.990000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 73a5ae2f-5c7f-4d50-9eb6-6bb66002529e
+      field_images:
+      -
+        filename: typewriter-black.jpg
+      weight:
+        number: '2.000000'
+        unit: kg
+    1b8d43b2-db98-43b4-a3de-bf49b9c89426:
+      type: complex
+      sku: Favorit-VintageTypewriter-gold
+      price:
+        number: '149.990000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 667a88d5-d1cf-4bc2-a9ca-8970e90fa640
+      field_images:
+        -
+          filename: typewriter-yellow.jpg
+      weight:
+        number: '2.000000'
+        unit: kg
+    7534429d-c3e3-4125-b6dc-aba88a9ea813:
+      type: complex
+      sku: Favorit-VintageTypewriter-red
+      price:
+        number: '149.990000'
+        currency_code: USD
+      status: '1'
+      attribute_color: 438eec9b-8c87-44f8-b798-698065ad6af4
+      field_images:
+        -
+          filename: typewriter-red.jpg
+      weight:
+        number: '2.000000'
+        unit: kg
+c1283cdd-d0c7-418b-80aa-ccd58a016590:
+  type: complex
+  status: '1'
+  title: 'French Macarons'
+  path: /product/french-macarons
+  field_brand: 76685424-351a-4668-882a-9169ac560536
+  field_product_categories:
+    - 9836e79c-08b7-4e6a-a719-c9b30c54fc29
+  field_special_categories:
+    - 5ac7df92-6021-4de7-886d-4618bc7513ec
+  variations:
+    32029693-b433-41be-8946-7987fcdb002b:
+      type: complex
+      sku: macarons-3
+      price:
+        number: '12.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: a7471467-0b54-42ae-bbb2-65435151bb9a
+      attribute_quantity: ca953550-eef5-48ea-ab46-fc446763e7a3
+      field_images:
+        -
+          filename: holly-stratton-3.jpg
+      weight:
+        number: '25.000000'
+        unit: g
+    61001954-c1a8-4083-bfef-f8f04e4c9d5b:
+      type: complex
+      sku: macarons-04
+      price:
+        number: '15.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: a7471467-0b54-42ae-bbb2-65435151bb9a
+      attribute_quantity: bf539c16-b41c-45f5-a6bd-ed5dcfc13e57
+      field_images:
+        -
+          filename: holly-stratton-4.jpg
+      weight:
+        number: '25.000000'
+        unit: g
+    f1278718-ad77-42ae-9568-7cf85ce10446:
+      type: complex
+      sku: macarons-10
+      price:
+        number: '45.000000'
+        currency_code: USD
+      status: '1'
+      attribute_color: a7471467-0b54-42ae-bbb2-65435151bb9a
+      attribute_quantity: 4629a910-3f91-473e-b906-5e8f4b742461
+      field_images:
+        -
+          filename: holly-stratton-10.jpg
+      weight:
+        number: '100.000000'
+        unit: g

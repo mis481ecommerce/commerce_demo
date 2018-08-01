@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.products
+  - search_api.index.products
   module:
-    - search_api
+  - search_api
 id: product_catalog
 label: 'Product catalog'
 module: views
@@ -71,8 +71,9 @@ display:
           view_modes:
             'entity:commerce_product':
               clothing: catalog
-              default: default
+              default: catalog
               simple: catalog
+              complex: catalog
       fields:
         product_id:
           table: search_api_index_products
@@ -232,7 +233,7 @@ display:
           expose:
             label: 'Date added'
           plugin_id: search_api
-      title: 'Products'
+      title: Products
       header: {  }
       footer: {  }
       empty: {  }
@@ -242,12 +243,12 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - url.query_args
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+      - 'languages:language_content'
+      - 'languages:language_interface'
+      - url
+      - url.query_args
+      - 'url.query_args:sort_by'
+      - 'url.query_args:sort_order'
       tags: {  }
   page_1:
     display_plugin: page
@@ -260,10 +261,10 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - url.query_args
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+      - 'languages:language_content'
+      - 'languages:language_interface'
+      - url
+      - url.query_args
+      - 'url.query_args:sort_by'
+      - 'url.query_args:sort_order'
       tags: {  }

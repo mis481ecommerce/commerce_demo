@@ -60,8 +60,10 @@ class ContentImporter {
       ['taxonomy_term', 'special_categories'],
       ['commerce_product_attribute_value', 'color'],
       ['commerce_product_attribute_value', 'size'],
+      ['commerce_product_attribute_value', 'quantity'],
       ['commerce_product', 'clothing'],
       ['commerce_product', 'simple'],
+      ['commerce_product', 'complex'],
       ['commerce_shipping_method', ''],
     ];
     foreach ($available_content as $keys) {

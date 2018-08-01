@@ -1,0 +1,85 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.complex
+    - field.field.commerce_product_variation.complex.attribute_color
+    - field.field.commerce_product_variation.complex.attribute_quantity
+    - field.field.commerce_product_variation.complex.attribute_size
+    - field.field.commerce_product_variation.complex.field_images
+    - field.field.commerce_product_variation.complex.weight
+    - image.style.thumbnail
+  module:
+    - commerce_price
+    - image
+    - physical
+id: commerce_product_variation.complex.default
+targetEntityType: commerce_product_variation
+bundle: complex
+mode: default
+content:
+  attribute_color:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  attribute_quantity:
+    type: options_select
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  attribute_size:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_images:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  weight:
+    weight: 4
+    settings:
+      default_unit: ''
+      allow_unit_change: true
+    third_party_settings: {  }
+    type: physical_measurement_default
+    region: content
+  price:
+    type: commerce_price_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  title: true
+  uid: true

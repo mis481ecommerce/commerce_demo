@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: complex
+label: Complex
+description: ''
+variationType: complex
+injectVariationFields: true
+traits: {  }
+locked: false
