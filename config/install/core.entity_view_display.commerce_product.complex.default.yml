@@ -10,7 +10,6 @@ dependencies:
     - field.field.commerce_product.complex.stores
     - field.field.commerce_product.complex.variations
   module:
-    - commerce_cart_flyout
     - text
 id: commerce_product.complex.default
 targetEntityType: commerce_product
