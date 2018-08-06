@@ -54,6 +54,9 @@ class ThemeHandler {
       else {
         $existing_block->setRegion($block_data['region']);
         $existing_block->setWeight($block_data['weight']);
+        foreach ($block_data['visibility'] as $instance_id => $instance_config) {
+          $existing_block->setVisibilityConfig($instance_id, $instance_config);
+        }
         $existing_block->setStatus(TRUE);
         $existing_block->save();
       }
@@ -117,6 +120,24 @@ class ThemeHandler {
           'dropdown' => 'true',
           'item_text' => 'items',
         ],
+        'visibility' => [],
+      ],
+      'breadcrumbs' => [
+        'plugin' => 'system_breadcrumb_block',
+        'settings' => [
+          'id' => 'system_breadcrumb_block',
+          'label' => 'Breadcrumbs',
+          'provider' => 'system',
+          'label_display' => '0',
+        ],
+        'visibility' => [
+          'request_path' => [
+            'id' => 'request_path',
+            'pages' => "/checkout\r\n/checkout/*",
+            'negate' => TRUE,
+            'context_mapping' => [],
+          ],
+        ],
       ],
     ];
   }
@@ -137,6 +158,9 @@ class ThemeHandler {
 
     $data['shopping_cart']['region'] = 'header';
     $data['shopping_cart']['weight'] = NULL;
+
+    $data['breadcrumbs']['region'] = 'breadcrumb';
+    $data['breadcrumbs']['weight'] = 0;
   }
 
   /**
@@ -155,6 +179,9 @@ class ThemeHandler {
 
     $data['shopping_cart']['region'] = 'top_navigation';
     $data['shopping_cart']['weight'] = -5;
+
+    $data['breadcrumbs']['region'] = 'highlighted';
+    $data['breadcrumbs']['weight'] = -7;
   }
 
 }
