@@ -5,6 +5,7 @@ namespace Drupal\commerce_demo;
 use Drupal\commerce_product\Entity\ProductAttributeValueInterface;
 use Drupal\commerce_product\Entity\ProductInterface;
 use Drupal\commerce_product\Entity\ProductVariationInterface;
+use Drupal\commerce_promotion\Entity\PromotionInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\taxonomy\TermInterface;
@@ -164,6 +165,9 @@ class ContentExporter {
     elseif ($entity_type_id == 'commerce_product_attribute_value') {
       $export = $this->processAttributeValue($export, $entity);
     }
+    elseif ($entity_type_id == 'commerce_promotion') {
+      $export = $this->processPromotion($export, $entity);
+    }
     elseif ($entity_type_id == 'taxonomy_term') {
       $export = $this->processTerm($export, $entity);
     }
@@ -243,6 +247,30 @@ class ContentExporter {
   protected function processAttributeValue(array $export, ProductAttributeValueInterface $attribute_value) {
     // Don't export the weight for now.
     unset($export['weight']);
+    return $export;
+  }
+
+  /**
+   * Processes the exported promotion.
+   *
+   * @param array $export
+   *   The export array.
+   * @param \Drupal\commerce_promotion\Entity\PromotionInterface $promotion
+   *   The promotion.
+   *
+   * @return array
+   *   The processed export array.
+   */
+  protected function processPromotion(array $export, PromotionInterface $promotion) {
+    // Export the coupons as well.
+    $coupons = [];
+    foreach ($promotion->getCoupons() as $coupon) {
+      $coupons[$coupon->uuid()] = $this->export($coupon);
+      // The array is keyed by UUID, no need to have it in the export too.
+      unset($coupons[$coupon->uuid()]['uuid']);
+    }
+    $export['coupons'] = $coupons;
+
     return $export;
   }
 

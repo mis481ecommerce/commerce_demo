@@ -95,3 +95,20 @@ function commerce_demo_preprocess_breadcrumb(&$variables) {
     }
   }
 }
+
+/**
+ * Implements hook_commerce_product_view().
+ */
+function commerce_demo_commerce_product_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display, $view_mode) {
+  if ($view_mode !== 'full') {
+    return;
+  }
+  $messenger = \Drupal::messenger();
+
+  if ($entity->uuid() == '93470da2-a808-4069-89ee-e01f0d5ad0b7') {
+    $messenger->addStatus(t('Use <strong>TYPEWRITER</strong> and receive <strong>20% off</strong> at checkout.'));
+  }
+  if ($entity->uuid() == '665c62ac-94a8-4929-a147-83df0f2a67c6') {
+    $messenger->addStatus(t('Use <strong>CLOCKS</strong> and receive a <strong>$4 discount</strong> at checkout'));
+  }
+}

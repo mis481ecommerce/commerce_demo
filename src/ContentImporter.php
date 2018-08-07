@@ -2,11 +2,11 @@
 
 namespace Drupal\commerce_demo;
 
-use Drupal\commerce_product\Entity\ProductInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Serialization\Yaml;
 use Drupal\taxonomy\TermInterface;
+use Drupal\Core\Entity\EntityInterface;
 
 /**
  * Defines the content importer.
@@ -63,6 +63,7 @@ class ContentImporter {
       ['commerce_product', 'clothing'],
       ['commerce_product', 'simple'],
       ['commerce_shipping_method', ''],
+      ['commerce_promotion', ''],
     ];
     foreach ($available_content as $keys) {
       $this->importAll($keys[0], $keys[1]);
@@ -159,7 +160,10 @@ class ContentImporter {
     }
     // Process by entity type ID.
     if ($entity_type_id == 'commerce_product') {
-      $values = $this->processProduct($values, $entity);
+      $values = $this->processReferences($values, $entity, 'variations');
+    }
+    elseif ($entity_type_id == 'commerce_promotion') {
+      $values = $this->processReferences($values, $entity, 'coupons');
     }
     elseif ($entity_type_id == 'taxonomy_term') {
       $values = $this->processTerm($values, $entity);
@@ -197,24 +201,36 @@ class ContentImporter {
   }
 
   /**
-   * Processes product values before importing.
+   * Processes reference values before importing.
    *
    * @param array $values
-   *   The product values.
-   * @param \Drupal\commerce_product\Entity\ProductInterface $product
-   *   The product.
+   *   The entity values.
+   * @param \Drupal\Core\Entity\EntityInterface $entity
+   *   The entity.
+   * @param string $field_name
+   *   The name of the field containing the references. Currently supports
+   *   'variations' and 'coupons'.
    *
    * @return array
    *   The processed product values.
    */
-  protected function processProduct(array $values, ProductInterface $product) {
-    $variation_ids = [];
-    foreach ($values['variations'] as $uuid => $variation_values) {
-      $variation_values['uuid'] = $uuid;
-      $variation = $this->importEntity('commerce_product_variation', $variation_values);
-      $variation_ids[] = $variation->id();
+  protected function processReferences(array $values, EntityInterface $entity, $field_name) {
+    $ids = [];
+    foreach ($values[$field_name] as $uuid => $entity_values) {
+      $entity_values['uuid'] = $uuid;
+      if ($field_name == 'variations') {
+        $entity_type_id = 'commerce_product_variation';
+      }
+      elseif ($field_name == 'coupons') {
+        $entity_type_id = 'commerce_promotion_coupon';
+      }
+      else {
+        return $values;
+      }
+      $imported_entity = $this->importEntity($entity_type_id, $entity_values);
+      $ids[] = $imported_entity->id();
     }
-    $values['variations'] = $variation_ids;
+    $values[$field_name] = $ids;
 
     return $values;
   }

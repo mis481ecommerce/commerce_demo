@@ -11,6 +11,7 @@ dependencies:
   - commerce:commerce_payment
   - commerce:commerce_payment_example
   - commerce:commerce_product
+  - commerce:commerce_promotion
   - commerce:commerce_tax
   - commerce_shipping:commerce_shipping
   - facets:facets
