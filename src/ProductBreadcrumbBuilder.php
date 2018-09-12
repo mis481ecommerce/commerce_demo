@@ -12,7 +12,7 @@ use Drupal\Core\Url;
 use Drupal\pathauto\AliasCleanerInterface;
 
 /**
- * A breadcrumb builder for the canonical route of products.
+ * Builds a product breadcrumb based on the "field_product_categories" field.
  */
 class ProductBreadcrumbBuilder implements BreadcrumbBuilderInterface {
 
@@ -52,7 +52,12 @@ class ProductBreadcrumbBuilder implements BreadcrumbBuilderInterface {
    * {@inheritdoc}
    */
   public function applies(RouteMatchInterface $route_match) {
-    return $route_match->getRouteName() == 'entity.commerce_product.canonical';
+    if ($route_match->getRouteName() != 'entity.commerce_product.canonical') {
+      return FALSE;
+    }
+    $product = $route_match->getParameter('commerce_product');
+
+    return $product && $product->hasField('field_product_categories');
   }
 
   /**
