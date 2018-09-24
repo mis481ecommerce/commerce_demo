@@ -38,9 +38,10 @@ class ThemeHandler {
 
     foreach ($blocks as $block_id => $block_data) {
       /** @var \Drupal\block\Entity\Block $existing_block */
-      $existing_block = $this->blockStorage->load("{$theme}_{$block_id}");
+      $block_id = ($block_id == 'shopping_cart') ? $block_id : "{$theme}_{$block_id}";
+      $existing_block = $this->blockStorage->load($block_id);
       if (!$existing_block) {
-        $block_data['id'] = "{$theme}_{$block_id}";
+        $block_data['id'] = $block_id;
         $block_data['theme'] = $theme;
         /** @var \Drupal\block\Entity\Block $block */
         $block = $this->blockStorage->create($block_data);
