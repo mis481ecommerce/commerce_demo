@@ -25,17 +25,17 @@ content:
       link: ''
     third_party_settings: {  }
   completed:
-    label: above
+    label: inline
     type: timestamp
     weight: 3
     region: content
     settings:
-      date_format: medium
+      date_format: short
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
   mail:
-    label: above
+    label: inline
     type: basic_string
     weight: 2
     region: content
@@ -44,7 +44,7 @@ content:
   order_items:
     type: commerce_order_item_table
     weight: 6
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -52,23 +52,23 @@ content:
     type: string
     weight: 0
     region: content
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
   placed:
-    label: above
+    label: inline
     type: timestamp
     weight: 4
     region: content
     settings:
-      date_format: medium
+      date_format: short
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
   state:
-    label: hidden
-    type: state_transition_form
+    label: inline
+    type: list_default
     weight: 5
     region: content
     settings: {  }
