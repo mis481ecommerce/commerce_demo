@@ -5,6 +5,7 @@ id: simple
 label: Simple
 description: ''
 variationType: simple
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false
