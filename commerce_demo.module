@@ -40,9 +40,14 @@ function commerce_demo_menu_links_discovered_alter(&$links) {
       $term = $term_storage->load($link['metadata']['taxonomy_term_id']);
       /** @var \Drupal\facets\FacetInterface $facet */
       $facet = $facet_storage->load($term->bundle());
-      $label = $alias_cleaner->cleanString($term->label());
 
-      $link['url'] = 'internal:/' . $view_url . '/' . $facet->getUrlAlias() . '/' . $label . '-' . $term->id();
+      // It is possible for the facet to be NULL if it was deleted, in which
+      // case we only link to the view (which is better than nothing).
+      $link['url'] = 'internal:/' . $view_url;
+      if ($facet) {
+        $label = $alias_cleaner->cleanString($term->label());
+        $link['url'] .= '/' . $facet->getUrlAlias() . '/' . $label . '-' . $term->id();
+      }
       $link['route_name'] = '';
       $link['route_parameters'] = [];
       $link['load arguments'] = [];
