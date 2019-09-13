@@ -7,12 +7,12 @@ services:
     class: Drupal\commerce_demo\ContentImporter
     arguments: ['@entity_type.manager']
 
-  commerce_demo.address_events_subscriper:
+  commerce_demo.address_events_subscriber:
     class: Drupal\commerce_demo\EventSubscriber\AddressEventsSubscriber
     tags:
       - { name: event_subscriber }
 
-  commerce_demo.order_events_subscriper:
+  commerce_demo.order_events_subscriber:
     class: Drupal\commerce_demo\EventSubscriber\OrderEventsSubscriber
     tags:
       - { name: event_subscriber }
