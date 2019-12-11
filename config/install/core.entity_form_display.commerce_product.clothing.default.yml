@@ -7,8 +7,6 @@ dependencies:
     - field.field.commerce_product.clothing.field_brand
     - field.field.commerce_product.clothing.field_product_categories
     - field.field.commerce_product.clothing.field_special_categories
-    - field.field.commerce_product.clothing.stores
-    - field.field.commerce_product.clothing.variations
   module:
     - commerce
     - path

@@ -315,7 +315,6 @@ class ContentImporter {
             'postal_code' => '29616',
             'address_line1' => '12344 24th St',
           ],
-          'billing_countries' => ['US'],
           'prices_include_tax' => FALSE,
         ]);
         $store->save();
