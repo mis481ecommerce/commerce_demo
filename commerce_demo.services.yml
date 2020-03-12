@@ -25,7 +25,7 @@ services:
 
   commerce_demo.catalog_breadcrumb_builder:
     class: Drupal\commerce_demo\CatalogBreadcrumbBuilder
-    arguments: ['@request_stack', '@title_resolver']
+    arguments: ['@request_stack', '@title_resolver', '@entity_type.manager']
     tags:
       # facets_pretty_path is set to 1500.
       - { name: breadcrumb_builder, priority: 1501 }

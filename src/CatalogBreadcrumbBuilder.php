@@ -9,9 +9,13 @@ use Drupal\Core\Link;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\Url;
-use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\taxonomy\TermInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 
+/**
+ * Builds a catalog breadcrumb.
+ */
 class CatalogBreadcrumbBuilder implements BreadcrumbBuilderInterface {
 
   use StringTranslationTrait;
@@ -22,6 +26,13 @@ class CatalogBreadcrumbBuilder implements BreadcrumbBuilderInterface {
    * @var \Drupal\Core\Controller\TitleResolverInterface
    */
   protected $titleResolver;
+
+  /**
+   * The entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManager
+   */
+  protected $entityTypeManager;
 
   /**
    * The request stack.
@@ -37,10 +48,13 @@ class CatalogBreadcrumbBuilder implements BreadcrumbBuilderInterface {
    *   The request stack.
    * @param \Drupal\Core\Controller\TitleResolverInterface $title_resolver
    *   The title resolver.
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+   *   The entity storage.
    */
-  public function __construct(RequestStack $request_stack, TitleResolverInterface $title_resolver) {
+  public function __construct(RequestStack $request_stack, TitleResolverInterface $title_resolver, EntityTypeManagerInterface $entity_type_manager) {
     $this->requestStack = $request_stack;
     $this->titleResolver = $title_resolver;
+    $this->entityTypeManager = $entity_type_manager;
   }
 
   /**
@@ -75,8 +89,9 @@ class CatalogBreadcrumbBuilder implements BreadcrumbBuilderInterface {
 
         $alias_value_parts = explode('-', $facet_value);
         $term_id = array_pop($alias_value_parts);
-        $term = Term::load($term_id);
-        $breadcrumb->addLink(Link::fromTextAndUrl($term->label(), Url::fromRoute($route_match->getRouteName(), [
+        $term = $this->entityTypeManager->getStorage('taxonomy_term')->load($term_id);
+        assert($term instanceof TermInterface);
+        $breadcrumb->addLink(Link::fromTextAndUrl($term->getName(), Url::fromRoute($route_match->getRouteName(), [
           'facets_query' => "$facet_query_alias/$facet_value",
         ])));
         $breadcrumb->addCacheableDependency($term);
