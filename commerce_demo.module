@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Url;
+use Drupal\facets\FacetInterface;
+use Symfony\Component\Routing\Exception\RouteNotFoundException;
 
 /**
  * Implements hook_theme().
@@ -29,8 +31,14 @@ function commerce_demo_menu_links_discovered_alter(&$links) {
   $alias_cleaner = \Drupal::service('pathauto.alias_cleaner');
   $facet_storage = \Drupal::entityTypeManager()->getStorage('facets_facet');
   $term_storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
-  $view_url = Url::fromRoute('view.product_catalog.page_1');
-  $view_url = $view_url->getInternalPath();
+  try {
+    $view_url = Url::fromRoute('view.product_catalog.page_1');
+    $view_url = $view_url->getInternalPath();
+  }
+  catch (RouteNotFoundException $e) {
+    // The catalog View may have been disabled or deleted.
+    return;
+  }
 
   foreach ($links as &$link) {
     $menu_name = isset($link['menu_name']) ? $link['menu_name'] : '';
@@ -38,8 +46,10 @@ function commerce_demo_menu_links_discovered_alter(&$links) {
       // Generate the path to the view + facets.
       // Assumes that the facet is named the same as the vocabulary.
       $term = $term_storage->load($link['metadata']['taxonomy_term_id']);
-      /** @var \Drupal\facets\FacetInterface $facet */
       $facet = $facet_storage->load($term->bundle());
+      if (!$facet instanceof FacetInterface) {
+        continue;
+      }
 
       // It is possible for the facet to be NULL if it was deleted, in which
       // case we only link to the view (which is better than nothing).

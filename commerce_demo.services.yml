@@ -19,7 +19,7 @@ services:
 
   commerce_demo.product_breadcrumb_builder:
     class: Drupal\commerce_demo\ProductBreadcrumbBuilder
-    arguments: ['@pathauto.alias_cleaner', '@entity_type.manager']
+    arguments: ['@pathauto.alias_cleaner', '@entity_type.manager', '@router.route_provider']
     tags:
       - { name: breadcrumb_builder, priority: 1100 }
 
