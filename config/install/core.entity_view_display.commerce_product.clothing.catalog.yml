@@ -8,8 +8,6 @@ dependencies:
     - field.field.commerce_product.clothing.field_brand
     - field.field.commerce_product.clothing.field_product_categories
     - field.field.commerce_product.clothing.field_special_categories
-    - field.field.commerce_product.clothing.stores
-    - field.field.commerce_product.clothing.variations
 id: commerce_product.clothing.catalog
 targetEntityType: commerce_product
 bundle: clothing

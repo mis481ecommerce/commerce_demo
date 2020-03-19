@@ -4,7 +4,6 @@ dependencies:
   config:
     - commerce_order.commerce_order_type.physical
     - core.entity_view_mode.commerce_order.user
-    - field.field.commerce_order.physical.order_items
     - field.field.commerce_order.physical.shipments
   module:
     - commerce_order

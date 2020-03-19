@@ -7,8 +7,6 @@ dependencies:
     - field.field.commerce_product.simple.field_brand
     - field.field.commerce_product.simple.field_product_categories
     - field.field.commerce_product.simple.field_special_categories
-    - field.field.commerce_product.simple.stores
-    - field.field.commerce_product.simple.variations
   module:
     - commerce
     - commerce_product
