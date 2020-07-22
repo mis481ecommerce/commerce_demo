@@ -7,6 +7,7 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Serialization\Yaml;
 use Drupal\taxonomy\TermInterface;
 use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\File\FileSystemInterface;
 
 /**
  * Defines the content importer.
@@ -304,7 +305,7 @@ class ContentImporter {
     $file = reset($files);
     if (!$file) {
       $path = $this->contentPath . '/files/' . $filename;
-      $uri = \file_unmanaged_copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
+      $uri = \Drupal::service('file_system')->copy($path, 'public://' . $filename, FileSystemInterface::EXISTS_REPLACE);
       $file = $file_storage->create([
         'filename' => $filename,
         'uri' => $uri,
