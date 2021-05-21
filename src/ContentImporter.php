@@ -2,6 +2,7 @@
 
 namespace Drupal\commerce_demo;
 
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Serialization\Yaml;
@@ -24,6 +25,13 @@ class ContentImporter {
   protected $entityTypeManager;
 
   /**
+   * The file system.
+   *
+   * @var \Drupal\Core\File\FileSystemInterface
+   */
+  protected $fileSystem;
+
+  /**
    * The full path to the content directory.
    *
    * @var string
@@ -42,9 +50,12 @@ class ContentImporter {
    *
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
    *   The entity type manager.
+   * @param \Drupal\Core\File\FileSystemInterface $file_system
+   *   The file system.
    */
-  public function __construct(EntityTypeManagerInterface $entityTypeManager) {
+  public function __construct(EntityTypeManagerInterface $entityTypeManager, FileSystemInterface $file_system) {
     $this->entityTypeManager = $entityTypeManager;
+    $this->fileSystem = $file_system;
     $this->contentPath = realpath(__DIR__ . '/../content');
   }
 
@@ -341,7 +352,7 @@ class ContentImporter {
     $file = reset($files);
     if (!$file) {
       $path = $this->contentPath . '/files/' . $filename;
-      $uri = file_unmanaged_copy($path, 'public://' . $filename, FILE_EXISTS_REPLACE);
+      $uri = $this->fileSystem->copy($path, 'public://' . $filename, FileSystemInterface::EXISTS_REPLACE);
       $file = $file_storage->create([
         'filename' => $filename,
         'uri' => $uri,

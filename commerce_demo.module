@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 /**
  * @file
  * Provides a demo store for Commerce.
@@ -114,7 +116,7 @@ function commerce_demo_preprocess_breadcrumb(&$variables) {
 /**
  * Implements hook_commerce_product_view().
  */
-function commerce_demo_commerce_product_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display, $view_mode) {
+function commerce_demo_commerce_product_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
   if ($view_mode !== 'full') {
     return;
   }
