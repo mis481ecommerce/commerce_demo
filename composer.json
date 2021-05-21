@@ -13,7 +13,7 @@
         "drupal/image_delta_formatter": "^1.0",
         "drupal/pathauto": "^1.0",
         "drupal/search_api": "^1.9",
-        "drupal/taxonomy_menu": "^3.3",
+        "drupal/taxonomy_menu": "3.x-dev#8.x-3.5",
         "drupal/taxonomy_term_depth": "2.x-dev"
     },
     "minimum-stability": "dev"
