@@ -1,4 +1,4 @@
-<?php declare(strict_types = 1);
+<?php
 
 namespace Drupal\commerce_demo\EventSubscriber;
 
@@ -7,6 +7,9 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
+/**
+ * Sets the 'Content-Security-Policy' header to allow embedding in iFrame.
+ */
 final class ResponseFrameOptions implements EventSubscriberInterface {
 
   /**

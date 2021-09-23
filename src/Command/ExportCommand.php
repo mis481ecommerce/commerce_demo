@@ -21,7 +21,7 @@ use Symfony\Component\Console\Question\ChoiceQuestion;
 // @codingStandardsIgnoreEnd
 
 /**
- * Class ExportCommand.
+ * Provides a command for exporting content entities.
  *
  * @package Drupal\commerce_demo
  *

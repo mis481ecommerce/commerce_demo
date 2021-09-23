@@ -8,6 +8,9 @@ use Drupal\Core\Plugin\Discovery\ContainerDeriverInterface;
 use Drupal\taxonomy\TermInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+/**
+ * Provides product catalog menu links.
+ */
 final class CatalogLinkDerivative extends DeriverBase implements ContainerDeriverInterface {
 
   /**
@@ -63,15 +66,15 @@ final class CatalogLinkDerivative extends DeriverBase implements ContainerDerive
       }
 
       $this->derivatives[$term->uuid()] = [
-          'route_name' => 'entity.taxonomy_term.canonical',
-          'route_parameters' => [
-            'taxonomy_term' => $term->id(),
-          ],
-          'title' => $term->label(),
-          'expanded' => 1,
-          'menu_name' => 'main',
-          'parent' => $menu_link_parent,
-        ] + $base_plugin_definition;
+        'route_name' => 'entity.taxonomy_term.canonical',
+        'route_parameters' => [
+          'taxonomy_term' => $term->id(),
+        ],
+        'title' => $term->label(),
+        'expanded' => 1,
+        'menu_name' => 'main',
+        'parent' => $menu_link_parent,
+      ] + $base_plugin_definition;
     }
 
     return $this->derivatives;

@@ -104,7 +104,7 @@ class ContentExporter {
         continue;
       }
 
-      $storage_definition = $items->getFieldDefinition()->getFieldStorageDefinition();;
+      $storage_definition = $items->getFieldDefinition()->getFieldStorageDefinition();
       $list = $items->getValue();
       foreach ($list as $delta => $item) {
         if ($storage_definition->getType() == 'entity_reference') {
