@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_store
+  uuid: ce1e2e78-c643-49b1-abc3-d4582a9db33a
+  bundle: online
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Centroium Paris'
+  mail:
+    -
+      value: store@example.com
+  default_currency:
+    -
+      target_id: USD
+  timezone:
+    -
+      value: Europe/London
+  address:
+    -
+      langcode: ''
+      country_code: FR
+      administrative_area: ''
+      locality: Pairs
+      dependent_locality: ''
+      postal_code: '75001'
+      sorting_code: ''
+      address_line1: 'Rue de la Monnaie'
+      address_line2: ''
+      organization: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  is_default:
+    -
+      value: false
+  prices_include_tax:
+    -
+      value: false

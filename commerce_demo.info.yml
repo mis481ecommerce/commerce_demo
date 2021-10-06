@@ -1,23 +1,54 @@
-name: Commerce Demo
+name: 'Commerce Demo'
 type: module
-description: 'Provides a demo store for Commerce.'
-package: Commerce (contrib)
-core_version_requirement: ^8.8 || ^9
+description: 'Provides a demo store & products for Commerce.'
+package: 'Commerce (contrib)'
+core_version_requirement: '^8.9 || ^9'
 dependencies:
-  - color_field:color_field
-  - commerce:commerce
-  - commerce:commerce_cart
-  - commerce:commerce_checkout
-  - commerce:commerce_payment
-  - commerce:commerce_payment_example
-  - commerce:commerce_product
-  - commerce:commerce_promotion
-  - commerce:commerce_tax
-  - commerce_shipping:commerce_shipping
-  - commerce_pricelist:commerce_pricelist
-  - search_api:search_api
-  - search_api:search_api_db
-  - drupal:image
-  - drupal:taxonomy
-  - drupal:path
-  - drupal:path_alias
+  - 'commerce:commerce_payment'
+  - 'commerce:commerce_payment_example'
+  - 'commerce:commerce_price'
+  - 'commerce_kickstart:commerce_kickstart'
+  - 'commerce_kickstart:commerce_kickstart_physical'
+  - 'commerce_kickstart:commerce_kickstart_media_products'
+  - 'default_content:default_content'
+  - 'search_api:search_api'
+  - 'search_api:search_api_db'
+default_content:
+  file:
+    - 1e590e30-c37b-48af-b6bb-ff5f3fa92372
+    - 6c1772d5-858c-4cce-baac-e20108284e93
+    - e33e5021-d447-42f7-96ca-bb0186a92727
+  commerce_product:
+    - b912da11-5af5-4790-8b96-01f4afd94f93
+    - 8c0549b0-9faa-4ae9-8d4d-2e8a54eaa4e5
+    - eb5041ad-4bab-4c80-ac9c-1b79414d39c5
+  commerce_product_variation:
+    - 61670ac2-667a-458e-bae6-124d2a9ad04d
+    - d5a0b5a9-c2b5-4d76-a51f-be6eeb246298
+    - 4061ca42-433a-4a9f-ba69-165c1458e367
+  commerce_shipping_method:
+    - 55b2d7c3-85d3-4e9b-8ec6-667ac8a09d5e
+    - af39f3f3-0771-464c-ad69-e5d2a14bbe3c
+    - ba04d979-ac60-444b-9740-a18310a19c30
+    - c43f2e92-72d0-49b1-97dd-1e3d2a48cc06
+    - db7fcd5a-1a94-49ac-b30f-7c5c82399fbf
+  commerce_store:
+    - 3ee0fdea-6255-4206-b434-65fc82f0e2e1
+    - f812b134-42ef-4fc9-9270-66ba5183e278
+    - ce1e2e78-c643-49b1-abc3-d4582a9db33a
+    - 5361f5c4-b942-4e9e-b7f7-6112049462c1
+  taxonomy_term:
+    - 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    - 5f5b51cf-4d21-47d0-a5d9-620088db53f2
+    - d3c7e8e9-c79c-4f7d-949f-77353436a1d1
+    - 077bc143-7067-4b4e-aa0b-adec28b9d26f
+    - ce96c75a-d532-4707-a346-56b4dce2fe19
+    - 3919bf43-38a0-44f8-8302-0d7ffc685679
+    - da804d6b-b9b0-47d2-9c75-cc1dfdf42ef1
+    - ee76c0d2-5c5e-40ed-9239-f8c6b8acaec9
+    - a875c177-13be-4634-959c-cfee50241a28
+    - 3736d1af-67ec-478e-a5d8-e25b28c7a033
+    - 6e69664b-c364-4bb7-bff9-26f82592ef51
+    - d6d21052-9e2c-4f0a-9bb3-c9742c616618
+    - 54ef2886-4dc7-4bc7-89fe-11fd1bd5c74e
+    - c13e0301-de33-4bce-8352-86fdeeef431f
