@@ -5,7 +5,7 @@
     "homepage": "http://drupal.org/project/commerce_demo",
     "license": "GPL-2.0+",
     "require": {
-        "drupal/commerce_kickstart": "^3.0",
+        "centarro/commerce_kickstart": "^3.0",
         "drupal/default_content": "^2.0",
         "drupal/search_api": "^1.20"
     }
