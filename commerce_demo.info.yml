@@ -18,14 +18,19 @@ default_content:
     - 1e590e30-c37b-48af-b6bb-ff5f3fa92372
     - 6c1772d5-858c-4cce-baac-e20108284e93
     - e33e5021-d447-42f7-96ca-bb0186a92727
+    - 3e1ed878-e59e-4e4f-a7d3-e08fb7b19812
+    - 18d61e35-4374-4968-8b70-75b528a529ee
   commerce_product:
     - b912da11-5af5-4790-8b96-01f4afd94f93
     - 8c0549b0-9faa-4ae9-8d4d-2e8a54eaa4e5
     - eb5041ad-4bab-4c80-ac9c-1b79414d39c5
+    - 511e7616-1a04-46c4-a8c0-7d71515d316b
   commerce_product_variation:
     - 61670ac2-667a-458e-bae6-124d2a9ad04d
     - d5a0b5a9-c2b5-4d76-a51f-be6eeb246298
     - 4061ca42-433a-4a9f-ba69-165c1458e367
+    - 3e687463-ff5e-428f-801a-e61c034d40e6
+    - 19f2de85-1074-438a-9f9d-beafb59876aa
   commerce_shipping_method:
     - 55b2d7c3-85d3-4e9b-8ec6-667ac8a09d5e
     - af39f3f3-0771-464c-ad69-e5d2a14bbe3c

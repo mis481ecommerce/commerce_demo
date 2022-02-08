@@ -12,13 +12,13 @@ default:
       value: synthetic-clusterfiber-standard-pillow.jpg
   uri:
     -
-      value: 'public://2021-09/synthetic-clusterfiber-standard-pillow_0.jpg'
+      value: 'public://2021-09/synthetic-clusterfiber-standard-pillow_0_21.jpg'
   filemime:
     -
       value: image/jpeg
   filesize:
     -
-      value: 2584251
+      value: 725362
   status:
     -
       value: true

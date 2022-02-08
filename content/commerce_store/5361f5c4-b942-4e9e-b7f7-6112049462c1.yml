@@ -31,10 +31,6 @@ default:
       sorting_code: ''
       address_line1: '1 Chome-4-1'
       address_line2: Nihonbashimuromachi
-      organization: ''
-      given_name: ''
-      additional_name: ''
-      family_name: ''
   path:
     -
       alias: ''
@@ -43,6 +39,9 @@ default:
   is_default:
     -
       value: false
+  created:
+    -
+      value: 1644322129
   prices_include_tax:
     -
       value: false

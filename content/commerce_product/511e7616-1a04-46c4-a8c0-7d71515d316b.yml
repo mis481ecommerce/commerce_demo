@@ -1,0 +1,55 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 511e7616-1a04-46c4-a8c0-7d71515d316b
+  bundle: media
+  default_langcode: en
+  depends:
+    3ee0fdea-6255-4206-b434-65fc82f0e2e1: commerce_store
+    3e687463-ff5e-428f-801a-e61c034d40e6: commerce_product_variation
+    19f2de85-1074-438a-9f9d-beafb59876aa: commerce_product_variation
+    18d61e35-4374-4968-8b70-75b528a529ee: file
+    6e69664b-c364-4bb7-bff9-26f82592ef51: taxonomy_term
+    a875c177-13be-4634-959c-cfee50241a28: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 3ee0fdea-6255-4206-b434-65fc82f0e2e1
+  title:
+    -
+      value: 'Centarro The Book'
+  variations:
+    -
+      entity: 3e687463-ff5e-428f-801a-e61c034d40e6
+    -
+      entity: 19f2de85-1074-438a-9f9d-beafb59876aa
+  default_variation:
+    -
+      entity: 3e687463-ff5e-428f-801a-e61c034d40e6
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  created:
+    -
+      value: 1644322609
+  images:
+    -
+      entity: 18d61e35-4374-4968-8b70-75b528a529ee
+      alt: 'Centarro Logo'
+      title: ''
+      width: 235
+      height: 220
+  product_brand:
+    -
+      entity: 6e69664b-c364-4bb7-bff9-26f82592ef51
+  product_collections:
+    -
+      entity: a875c177-13be-4634-959c-cfee50241a28

@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: 6c1772d5-858c-4cce-baac-e20108284e93
+  uuid: 18d61e35-4374-4968-8b70-75b528a529ee
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: pink-chair.jpg
+      value: centarro_logo.png
   uri:
     -
-      value: 'public://2021-09/pink-chair_0_21.jpg'
+      value: 'public://2022-02/centarro_logo.png'
   filemime:
     -
-      value: image/jpeg
+      value: image/png
   filesize:
     -
-      value: 1800189
+      value: 4028
   status:
     -
       value: true
   created:
     -
-      value: 1631897739
+      value: 1644322646

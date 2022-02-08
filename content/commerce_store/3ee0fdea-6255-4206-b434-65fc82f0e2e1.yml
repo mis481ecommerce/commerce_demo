@@ -31,10 +31,6 @@ default:
       sorting_code: ''
       address_line1: Picadilly
       address_line2: ''
-      organization: ''
-      given_name: ''
-      additional_name: ''
-      family_name: ''
   path:
     -
       alias: ''
@@ -43,6 +39,9 @@ default:
   is_default:
     -
       value: true
+  created:
+    -
+      value: 1644322129
   shipping_countries:
     -
       value: GG
