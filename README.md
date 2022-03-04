@@ -19,4 +19,4 @@ Dependencies:
 ### Installation notes
 
 The module imports demo products upon installation and this can take time.
-It is recommended to expand PHP's minimum execution time to at least 300 seconds.
+It is recommended to expand PHP minimum execution time to at least 300 seconds.
