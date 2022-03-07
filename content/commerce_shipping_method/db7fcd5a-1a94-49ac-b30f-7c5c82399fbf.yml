@@ -17,14 +17,14 @@ default:
         rate_description: 'We''ll contact you by text the night before your delivery to narrow your slot down to a 2-hour window, and we''ll confirm that on '
         rate_amount:
           number: '19.95'
-          currency_code: GBP
+          currency_code: USD
         services:
           - default
         default_package_type: custom_box
         workflow: shipment_default
   name:
     -
-      value: 'UK Next day (order by 2pm: large items)'
+      value: 'US Next day (order by 2pm: large items)'
   conditions:
     -
       target_plugin_id: shipment_address
@@ -32,7 +32,7 @@ default:
         zone:
           territories:
             -
-              country_code: GB
+              country_code: US
         negate: 0
     -
       target_plugin_id: shipment_weight

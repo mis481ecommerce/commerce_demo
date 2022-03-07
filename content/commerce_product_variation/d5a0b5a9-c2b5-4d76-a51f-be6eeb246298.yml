@@ -25,8 +25,8 @@ default:
   price:
     -
       number: '199.000000'
-      currency_code: GBP
-      formatted: £199.00
+      currency_code: USD
+      formatted: $199.00
   created:
     -
       value: 1631897780

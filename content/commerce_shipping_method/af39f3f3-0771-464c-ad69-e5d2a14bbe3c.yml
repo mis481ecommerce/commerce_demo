@@ -17,14 +17,14 @@ default:
         rate_description: 'Our carrier delivers next day (order by 8pm the day before) or on a day of your choice 7 days a week, 7.30 - 10.30am.'
         rate_amount:
           number: '10.95'
-          currency_code: GBP
+          currency_code: USD
         services:
           - default
         default_package_type: custom_box
         workflow: shipment_default
   name:
     -
-      value: 'UK Pre-10.30am Next (order by 8pm)'
+      value: 'US Pre-10.30am Next (order by 8pm)'
   conditions:
     -
       target_plugin_id: shipment_address
@@ -32,7 +32,7 @@ default:
         zone:
           territories:
             -
-              country_code: GB
+              country_code: US
         negate: 0
     -
       target_plugin_id: shipment_weight

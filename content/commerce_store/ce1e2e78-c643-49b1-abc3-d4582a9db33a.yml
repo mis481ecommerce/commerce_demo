@@ -16,10 +16,10 @@ default:
       value: store@example.com
   default_currency:
     -
-      target_id: USD
+      target_id: EUR
   timezone:
     -
-      value: Europe/London
+      value: Europe/Paris
   address:
     -
       langcode: ''

@@ -22,12 +22,6 @@ default:
   stores:
     -
       entity: f812b134-42ef-4fc9-9270-66ba5183e278
-    -
-      entity: ce1e2e78-c643-49b1-abc3-d4582a9db33a
-    -
-      entity: 5361f5c4-b942-4e9e-b7f7-6112049462c1
-    -
-      entity: 3ee0fdea-6255-4206-b434-65fc82f0e2e1
   title:
     -
       value: 'Side Table'

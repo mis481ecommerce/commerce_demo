@@ -19,7 +19,7 @@ default:
       target_id: JPY
   timezone:
     -
-      value: Europe/London
+      value: Asia/Tokyo
   address:
     -
       langcode: ''
