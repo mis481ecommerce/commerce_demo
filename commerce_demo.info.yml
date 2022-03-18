@@ -7,7 +7,6 @@ dependencies:
   - 'commerce:commerce_payment'
   - 'commerce:commerce_payment_example'
   - 'commerce:commerce_price'
-  - 'commerce_kickstart:commerce_kickstart'
   - 'default_content:default_content'
   - 'search_api:search_api'
   - 'search_api:search_api_db'
