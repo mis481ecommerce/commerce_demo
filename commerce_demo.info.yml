@@ -8,8 +8,6 @@ dependencies:
   - 'commerce:commerce_payment_example'
   - 'commerce:commerce_price'
   - 'commerce_kickstart:commerce_kickstart'
-  - 'commerce_kickstart:commerce_kickstart_physical_product'
-  - 'commerce_kickstart:commerce_kickstart_media_product'
   - 'default_content:default_content'
   - 'search_api:search_api'
   - 'search_api:search_api_db'
