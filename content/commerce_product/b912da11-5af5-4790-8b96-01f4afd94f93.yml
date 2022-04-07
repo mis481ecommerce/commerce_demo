@@ -6,12 +6,10 @@ _meta:
   default_langcode: en
   depends:
     f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
-    ce1e2e78-c643-49b1-abc3-d4582a9db33a: commerce_store
-    5361f5c4-b942-4e9e-b7f7-6112049462c1: commerce_store
-    3ee0fdea-6255-4206-b434-65fc82f0e2e1: commerce_store
     61670ac2-667a-458e-bae6-124d2a9ad04d: commerce_product_variation
     1e590e30-c37b-48af-b6bb-ff5f3fa92372: file
     0a3e84ac-163b-4276-8e85-090aec9c3cdc: taxonomy_term
+    745624c0-6cae-42ca-91e7-45b2cc2f2ece: taxonomy_term
 default:
   uid:
     -
@@ -49,8 +47,10 @@ default:
       entity: 1e590e30-c37b-48af-b6bb-ff5f3fa92372
       alt: 'Synthetic Clusterfibre Standard Pillow'
       title: ''
-      width: 5303
-      height: 5303
+      width: 1920
+      height: 1920
   product_collections:
     -
       entity: 0a3e84ac-163b-4276-8e85-090aec9c3cdc
+    -
+      entity: 745624c0-6cae-42ca-91e7-45b2cc2f2ece

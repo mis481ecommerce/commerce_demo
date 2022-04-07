@@ -12,7 +12,7 @@ default:
       value: pink-chair.jpg
   uri:
     -
-      value: 'public://2021-09/pink-chair_0_21.jpg'
+      value: 'public://2021-09/pink-chair_0_21_0_2.jpg'
   filemime:
     -
       value: image/jpeg

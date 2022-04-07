@@ -13,7 +13,7 @@ default:
       value: 'Sport & Leisure'
   weight:
     -
-      value: 7
+      value: 15
   parent:
     -
       target_id: 0

@@ -5,11 +5,12 @@ _meta:
   bundle: media
   default_langcode: en
   depends:
-    3ee0fdea-6255-4206-b434-65fc82f0e2e1: commerce_store
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
     3e687463-ff5e-428f-801a-e61c034d40e6: commerce_product_variation
     19f2de85-1074-438a-9f9d-beafb59876aa: commerce_product_variation
     18d61e35-4374-4968-8b70-75b528a529ee: file
     6e69664b-c364-4bb7-bff9-26f82592ef51: taxonomy_term
+    5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
     a875c177-13be-4634-959c-cfee50241a28: taxonomy_term
 default:
   uid:
@@ -51,5 +52,7 @@ default:
     -
       entity: 6e69664b-c364-4bb7-bff9-26f82592ef51
   product_collections:
+    -
+      entity: 5581e5e6-6145-44e4-8da6-51d5f22497a8
     -
       entity: a875c177-13be-4634-959c-cfee50241a28

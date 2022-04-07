@@ -13,7 +13,7 @@ default:
       value: Men
   weight:
     -
-      value: 4
+      value: 13
   parent:
     -
       target_id: 0

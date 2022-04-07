@@ -12,7 +12,7 @@ default:
       value: 'Commerce Demo Digital Product.pdf'
   uri:
     -
-      value: 'private://2022-02/Commerce Demo Digital Product.pdf'
+      value: 'private://2022-02/Commerce Demo Digital Product_0_2.pdf'
   filemime:
     -
       value: application/pdf

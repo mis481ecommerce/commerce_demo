@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: ea56e756-7aec-4ae3-9307-6882fc6a87e4
+  bundle: physical
+  default_langcode: en
+  depends:
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
+    47cd2854-378b-4b5a-a203-2bf26b7c877b: commerce_product_variation
+    716becbe-2bcf-41ae-a57b-800e137e5f20: file
+    aeb7a7aa-60d0-4a45-80df-aa9ca4111333: taxonomy_term
+    ce96c75a-d532-4707-a346-56b4dce2fe19: taxonomy_term
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
+  title:
+    -
+      value: 'Cocoa Fedora'
+  variations:
+    -
+      entity: 47cd2854-378b-4b5a-a203-2bf26b7c877b
+  default_variation:
+    -
+      entity: 47cd2854-378b-4b5a-a203-2bf26b7c877b
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  created:
+    -
+      value: 1647871649
+  body:
+    -
+      value: "<p>Sustainable hot chicken street art stumptown tousled pour-over mixtape. Listicle raclette polaroid hashtag. Marfa prism hot chicken aesthetic banh mi messenger bag. Kitsch put a bird on it 3 wolf moon, flannel air plant palo santo direct trade cred. Jianbing art party flexitarian gastropub ethical gluten-free tumblr master cleanse locavore, helvetica health goth austin fingerstache prism pickled. Franzen sartorial next level, pug heirloom locavore deep v tilde chicharrones. Roof party cloud bread tumeric taiyaki farm-to-table flexitarian, butcher cold-pressed.</p>\r\n\r\n<p>Tofu distillery poke chicharrones, poutine austin shabby chic cronut kogi XOXO. Swag seitan VHS af cray, health goth retro activated charcoal flannel tote bag squid heirloom. Kitsch yuccie la croix microdosing, bespoke retro hexagon small batch distillery photo booth lomo. Fingerstache vice banh mi mumblecore master cleanse cornhole.</p>\r\n"
+      format: basic_html
+      summary: ''
+  images:
+    -
+      entity: 716becbe-2bcf-41ae-a57b-800e137e5f20
+      alt: 'Cocoa Fedora'
+      title: ''
+      width: 670
+      height: 630
+  product_brand:
+    -
+      entity: aeb7a7aa-60d0-4a45-80df-aa9ca4111333
+  product_collections:
+    -
+      entity: ce96c75a-d532-4707-a346-56b4dce2fe19
