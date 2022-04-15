@@ -4,11 +4,11 @@ _meta:
   uuid: af39f3f3-0771-464c-ad69-e5d2a14bbe3c
   default_langcode: en
   depends:
-    3ee0fdea-6255-4206-b434-65fc82f0e2e1: commerce_store
+    f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
 default:
   stores:
     -
-      entity: 3ee0fdea-6255-4206-b434-65fc82f0e2e1
+      entity: f812b134-42ef-4fc9-9270-66ba5183e278
   plugin:
     -
       target_plugin_id: flat_rate
