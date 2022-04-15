@@ -39,7 +39,7 @@ default:
       value: 1631898010
   body:
     -
-      value: "<p><em>With a clean, modern aesthetic our furniture range is made from predominantly solid oak and oak veneers for a durable and visually striking finish. You'll enjoy the beautiful natural grain of the wood, as well as the enduring style and an elegant profile that will stand the test of time.</em></p>\r\n\r\n<p>This quirky side table can also be used as a bookcase and is ideal for minimalist storage.</p>\r\n"
+      value: "<p>With a clean, modern aesthetic our furniture range is made from predominantly solid oak and oak veneers for a durable and visually striking finish. You'll enjoy the beautiful natural grain of the wood, as well as the enduring style and an elegant profile that will stand the test of time.</p>\r\n\r\n<p>This quirky side table can also be used as a bookcase and is ideal for minimalist storage.</p>\r\n"
       format: basic_html
       summary: ''
   images:

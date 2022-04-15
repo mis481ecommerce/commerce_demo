@@ -41,6 +41,11 @@ default:
   created:
     -
       value: 1644322609
+  body:
+    -
+      value: "<p>Get the inside story of Centarro, the company behind Drupal Commerce, in this behind the scenes look at the company's formation and growth as told by its cofounders. Copiously researched with a healthy dose of anecdotes, pictures, and documents, this book answers the who, what, when, why, and how of Centarro to the Nth degree. This first edition includes a foreword by Drupal project founder Dries Buytaert.</p>\r\n\r\n<p>This book is available in hard copy and as digital download.</p>\r\n"
+      format: basic_html
+      summary: ''
   images:
     -
       entity: 18d61e35-4374-4968-8b70-75b528a529ee
