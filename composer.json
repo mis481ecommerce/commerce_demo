@@ -8,5 +8,12 @@
         "centarro/commerce_kickstart": "^3.0",
         "drupal/default_content": "^2.0",
         "drupal/search_api": "^1.20"
+    },
+    "extra": {
+      "patches": {
+          "drupal/default_content": {
+              "#3160146 Add a Normalizer and Denormalizer to support Layout Builder": "patches/3160146-layout-builder.patch"
+          }
+      }
     }
 }
