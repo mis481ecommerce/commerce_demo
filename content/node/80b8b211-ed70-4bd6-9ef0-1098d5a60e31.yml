@@ -531,7 +531,7 @@ default:
                 class: null
               background_media:
                 image:
-                  media_id: '3'
+                  media_id: '2'
                 video:
                   media_id: null
                 background_options:
