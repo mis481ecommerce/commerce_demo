@@ -11,6 +11,7 @@ dependencies:
   - 'commerce_kickstart:commerce_kickstart_layout_builder'
   - 'commerce_kickstart:commerce_kickstart_physical_product'
   - 'commerce_kickstart:commerce_kickstart_media_product'
+  - 'commerce_kickstart:commerce_kickstart_search_api_catalog'
   - 'default_content:default_content'
   - 'search_api:search_api'
   - 'search_api:search_api_db'
