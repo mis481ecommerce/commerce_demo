@@ -8,7 +8,7 @@ _meta:
     f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
     b3d9811a-3bad-4ab0-9f94-2e2a37001ca4: commerce_product_variation
     5c7706f7-f6d6-4cec-8b13-fd094d500a0e: commerce_product_variation
-    e6ec5fce-7200-4703-a5ee-7bebc223939f: file
+    cbed76ad-b537-4ea1-8aba-a52865b8b556: file
     4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
     5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
     08e5c462-8ed8-4c6a-b1dc-13e9b52f1aa4: taxonomy_term
@@ -48,11 +48,11 @@ default:
       summary: ''
   images:
     -
-      entity: e6ec5fce-7200-4703-a5ee-7bebc223939f
+      entity: cbed76ad-b537-4ea1-8aba-a52865b8b556
       alt: 'Frankenstein by Mary Wollstonecraft Shelley'
       title: ''
-      width: 800
-      height: 752
+      width: 2718
+      height: 2480
   product_brand:
     -
       entity: 4d5d9879-ab5d-45e8-b278-240f479845b1

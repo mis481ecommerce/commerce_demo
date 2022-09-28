@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: fa34f3a0-2d8a-4e3f-861c-7be4ad19176b
+  uuid: cb45953c-d9bb-473f-9cf1-6f8ea6bdaab5
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: alice.png
+      value: Book_Cover_Mockup8.jpg
   uri:
     -
-      value: 'public://2022-03/alice.png'
+      value: 'public://2022-09/Book_Cover_Mockup8.jpg'
   filemime:
     -
-      value: image/png
+      value: image/jpeg
   filesize:
     -
-      value: 784275
+      value: 444516
   status:
     -
       value: true
   created:
     -
-      value: 1648479182
+      value: 1663845439

@@ -8,7 +8,7 @@ _meta:
     f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
     ac2f5333-cc40-4a71-afcf-8ecbb9ee36f4: commerce_product_variation
     5b934891-c2fd-4814-87b3-9682b902f06f: commerce_product_variation
-    5b0ad9d3-72ee-4f93-b834-cb0994d2460e: file
+    cfb4fa35-ac69-470f-9b94-bf32a91e0267: file
     4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
     5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
     c6e79678-8cd0-4afc-acf9-4792f6010449: taxonomy_term
@@ -48,11 +48,11 @@ default:
       summary: ''
   images:
     -
-      entity: 5b0ad9d3-72ee-4f93-b834-cb0994d2460e
+      entity: cfb4fa35-ac69-470f-9b94-bf32a91e0267
       alt: 'A Tale of Two Cities by Charles Dickens'
       title: ''
-      width: 800
-      height: 752
+      width: 2718
+      height: 2480
   product_brand:
     -
       entity: 4d5d9879-ab5d-45e8-b278-240f479845b1

@@ -8,7 +8,7 @@ _meta:
     f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
     6c85c61d-15c5-4e93-b612-80a203ef8935: commerce_product_variation
     275034a6-a9de-47a6-b9ed-70e62ef83150: commerce_product_variation
-    a753bba9-2961-4502-9cc9-ed0701a9907d: file
+    c29155ad-e613-4dad-953f-5f57b9db79e5: file
     4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
     5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
     08e5c462-8ed8-4c6a-b1dc-13e9b52f1aa4: taxonomy_term
@@ -48,11 +48,11 @@ default:
       summary: ''
   images:
     -
-      entity: a753bba9-2961-4502-9cc9-ed0701a9907d
+      entity: c29155ad-e613-4dad-953f-5f57b9db79e5
       alt: 'The Mysteries of Udolpho by Ann Ward Radcliffe'
       title: ''
-      width: 800
-      height: 752
+      width: 2718
+      height: 2480
   product_brand:
     -
       entity: 4d5d9879-ab5d-45e8-b278-240f479845b1

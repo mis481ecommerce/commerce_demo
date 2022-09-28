@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: 5b0ad9d3-72ee-4f93-b834-cb0994d2460e
+  uuid: fc3fd09a-c621-45c9-b045-849c62c5dc14
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: 'A Tale of Two Cities.png'
+      value: Book_Cover_Mockup7.jpg
   uri:
     -
-      value: 'public://2022-03/A Tale of Two Cities.png'
+      value: 'public://2022-09/Book_Cover_Mockup7.jpg'
   filemime:
     -
-      value: image/png
+      value: image/jpeg
   filesize:
     -
-      value: 535583
+      value: 306411
   status:
     -
       value: true
   created:
     -
-      value: 1648479329
+      value: 1663845495

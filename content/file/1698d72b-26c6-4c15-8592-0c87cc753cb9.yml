@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: e6ec5fce-7200-4703-a5ee-7bebc223939f
+  uuid: 1698d72b-26c6-4c15-8592-0c87cc753cb9
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: frankenstein.png
+      value: Book_Cover_Mockup.jpg
   uri:
     -
-      value: 'public://2022-03/frankenstein.png'
+      value: 'public://2022-09/Book_Cover_Mockup.jpg'
   filemime:
     -
-      value: image/png
+      value: image/jpeg
   filesize:
     -
-      value: 169304
+      value: 306611
   status:
     -
       value: true
   created:
     -
-      value: 1648479310
+      value: 1663845567

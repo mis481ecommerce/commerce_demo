@@ -8,7 +8,7 @@ _meta:
     f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
     7890910d-bdc1-4faf-8e08-924e79be9008: commerce_product_variation
     a3382268-c2ad-46b0-a1e3-e47d94d6010f: commerce_product_variation
-    fa34f3a0-2d8a-4e3f-861c-7be4ad19176b: file
+    8052e939-5a36-405e-b374-495cd761947f: file
     4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
     5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
     eae42806-0fb3-4b4f-901e-4e8126eda222: taxonomy_term
@@ -48,11 +48,11 @@ default:
       summary: ''
   images:
     -
-      entity: fa34f3a0-2d8a-4e3f-861c-7be4ad19176b
+      entity: 8052e939-5a36-405e-b374-495cd761947f
       alt: 'Alice''s Adventures in Wonderland by Lewis Carroll'
       title: ''
-      width: 800
-      height: 752
+      width: 2718
+      height: 2480
   product_brand:
     -
       entity: 4d5d9879-ab5d-45e8-b278-240f479845b1

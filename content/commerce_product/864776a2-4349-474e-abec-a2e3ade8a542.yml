@@ -8,7 +8,7 @@ _meta:
     f812b134-42ef-4fc9-9270-66ba5183e278: commerce_store
     7c9c7c6f-b8bd-4bb9-be7b-7dcd9b631f42: commerce_product_variation
     17784fa1-4078-4e56-be2f-278ef5d4d5f5: commerce_product_variation
-    9c0f1eb4-4df7-4d34-98fb-ec11043ee707: file
+    4bd1a67a-dad0-4b70-b848-681da0125fc6: file
     4d5d9879-ab5d-45e8-b278-240f479845b1: taxonomy_term
     5581e5e6-6145-44e4-8da6-51d5f22497a8: taxonomy_term
     c6e79678-8cd0-4afc-acf9-4792f6010449: taxonomy_term
@@ -48,11 +48,11 @@ default:
       summary: ''
   images:
     -
-      entity: 9c0f1eb4-4df7-4d34-98fb-ec11043ee707
+      entity: 4bd1a67a-dad0-4b70-b848-681da0125fc6
       alt: 'Notre-Dame de Paris by Victor Hugo'
       title: ''
-      width: 800
-      height: 752
+      width: 2718
+      height: 2480
   product_brand:
     -
       entity: 4d5d9879-ab5d-45e8-b278-240f479845b1
