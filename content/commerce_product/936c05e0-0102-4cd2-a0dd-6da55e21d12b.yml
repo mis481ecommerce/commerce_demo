@@ -37,7 +37,7 @@ default:
     -
       alias: ''
       langcode: en
-      pathauto: 0
+      pathauto: 1
   created:
     -
       value: 1648462847

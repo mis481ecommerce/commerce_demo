@@ -16,7 +16,7 @@ default:
       value: false
   cklb_cta:
     -
-      uri: 'internal:/product/24'
+      uri: 'internal:/products/cocoa-fedora'
       title: 'Buy now'
       options: {  }
   cklb_subtitle:

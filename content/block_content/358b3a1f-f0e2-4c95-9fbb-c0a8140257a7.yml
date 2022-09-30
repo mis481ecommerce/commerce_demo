@@ -16,7 +16,7 @@ default:
       value: false
   cklb_cta:
     -
-      uri: 'internal:/product/7'
+      uri: 'internal:/products/adventures-sherlock-holmes-arthur-conan-doyle'
       title: 'Buy now'
       options: {  }
   cklb_subtitle:
