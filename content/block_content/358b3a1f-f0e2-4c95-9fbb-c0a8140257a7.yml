@@ -21,7 +21,7 @@ default:
       options: {  }
   cklb_subtitle:
     -
-      value: 'See our new product with support for different types of variations '
+      value: 'See how to do it on one product with multiple product variations.'
   cklb_title:
     -
-      value: 'Want to sell digital file download and physical copy under one same product'
+      value: 'Drupal Commerce sells physical and digital versions of the same media.'

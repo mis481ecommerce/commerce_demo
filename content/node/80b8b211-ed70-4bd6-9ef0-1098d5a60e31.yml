@@ -32,7 +32,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'Centarro Commerce'
+      value: 'Explore the Demo Store'
   created:
     -
       value: 1650276503
@@ -52,7 +52,7 @@ default:
       pathauto: 0
   cklb_description:
     -
-      value: 'Demo Commerce Kickstart.'
+      value: 'Explore the Commerce Kickstart demo store.'
   layout_builder__layout:
     -
       section:

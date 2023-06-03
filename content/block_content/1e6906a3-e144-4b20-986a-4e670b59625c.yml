@@ -21,7 +21,7 @@ default:
       options: {  }
   cklb_subtitle:
     -
-      value: 'Commerce with confidence'
+      value: 'Brought to you by Centarro'
   cklb_title:
     -
-      value: 'Welcome to Commerce Demo Kickstart!'
+      value: 'Explore the Commerce Kickstart demo.'
