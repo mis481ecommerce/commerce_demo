@@ -10,7 +10,7 @@ default:
       target_id: 1
   name:
     -
-      value: 'The Centroium Paris'
+      value: 'The Centorium Paris'
   mail:
     -
       value: store@example.com
@@ -25,7 +25,7 @@ default:
       langcode: ''
       country_code: FR
       administrative_area: ''
-      locality: Pairs
+      locality: Paris
       dependent_locality: ''
       postal_code: '75001'
       sorting_code: ''
